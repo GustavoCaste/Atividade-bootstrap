@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Redesenho da página do SINDADOS-BA, sindicato dos profissionais de processamento de dados e TI da Bahia.">
+  <title>SINDADOS-BA | Sindicato dos Profissionais de TI da Bahia</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+     crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" aria-label="Navegação principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center fw-bold" href="#inicio">
+          <svg class="me-2 text-warning" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
+            <path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"></path>
+            <path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path>
+          </svg>
+          SINDADOS-BA
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+          aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu de navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-principal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+            <li class="nav-item"><a class="nav-link" href="#pisos-salariais">Pisos Salariais</a></li>
+            <li class="nav-item"><a class="nav-link" href="#fique-socio">Fique Sócio</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" aria-label="Destaques">
+      <div id="carrossel-destaques" class="carousel slide carousel-fade" data-bs-ride="carousel"
+        aria-roledescription="carrossel" aria-label="Destaques do sindicato">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carrossel-destaques" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carrossel-destaques" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carrossel-destaques" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="6000">
+            <img src="assets/img/assembleia-campanha-salarial.jpg" class="d-block w-100 carousel-img"
+              alt="Trabalhadores sentados em volta de uma mesa de madeira, um deles fazendo anotações em um caderno">
+            <div class="carousel-caption text-start">
+              <h2 class="fw-bold">Campanha Salarial 2026/2027 – Participe da Assembleia</h2>
+              <p>A pauta de reivindicações será votada pela categoria. Sua presença define o que vamos levar à negociação.</p>
+              <a href="#noticias" class="btn btn-warning fw-semibold">Ver convocação</a>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="assets/img/equipe-ti-conveniados.jpg" class="d-block w-100 carousel-img"
+              alt="Equipe de desenvolvedores trabalhando com notebooks em uma mesa compartilhada">
+            <div class="carousel-caption text-start">
+              <h2 class="fw-bold">Novos Conveniados de TI</h2>
+              <p>Cursos, certificações e eventos da área com desconto para sócios e dependentes.</p>
+              <a href="#fique-socio" class="btn btn-warning fw-semibold">Conhecer convênios</a>
+            </div>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="6000">
+            <img src="assets/img/clube-beneficios-coworking.jpg" class="d-block w-100 carousel-img"
+              alt="Mesa de trabalho vista de cima, com notebooks, celulares, fones e xícaras de chá">
+            <div class="carousel-caption text-start">
+              <h2 class="fw-bold">Clube de Benefícios</h2>
+              <p>Descontos em saúde, educação, lazer e serviços para quem é associado ao SINDADOS-BA.</p>
+              <a href="#fique-socio" class="btn btn-warning fw-semibold">Ver benefícios</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-destaques" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Slide anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carrossel-destaques" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo slide</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="noticias" class="py-5" aria-labelledby="titulo-noticias">
+      <div class="container">
+        <h2 id="titulo-noticias" class="h1 fw-bold text-primary mb-4">Notícias</h2>
+        <div class="row g-4">
+          <article class="col-md-4">
+            <div class="news-item h-100 bg-body-tertiary rounded-end p-4">
+              <time class="small text-body-secondary" datetime="2026-11-03">3 de novembro de 2026</time>
+              <h3 class="h5 fw-bold mt-2">Assembleia define a pauta da Campanha Salarial 2026/2027</h3>
+              <p class="mb-0">A categoria se reúne para votar as reivindicações que serão levadas às entidades patronais, incluindo reajuste, participação nos resultados e regras de teletrabalho.</p>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="news-item h-100 bg-body-tertiary rounded-end p-4">
+              <time class="small text-body-secondary" datetime="2026-10-27">27 de outubro de 2026</time>
+              <h3 class="h5 fw-bold mt-2">Sindicato amplia a rede de conveniados na área de TI</h3>
+              <p class="mb-0">Novas escolas de tecnologia e centros de certificação passam a oferecer desconto em cursos para sócios em dia com a mensalidade.</p>
+            </div>
+          </article>
+          <article class="col-md-4">
+            <div class="news-item h-100 bg-body-tertiary rounded-end p-4">
+              <time class="small text-body-secondary" datetime="2026-10-20">20 de outubro de 2026</time>
+              <h3 class="h5 fw-bold mt-2">Plantão jurídico passa a atender por videochamada</h3>
+              <p class="mb-0">Dúvidas sobre jornada, banco de horas e rescisão agora podem ser tiradas à distância, com agendamento prévio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="pisos-salariais" class="py-5 bg-body-secondary" aria-labelledby="titulo-pisos">
+      <div class="container">
+        <h2 id="titulo-pisos" class="h1 fw-bold text-primary">Pisos Salariais e Reajustes da Categoria de TI (2026)</h2>
+        <p class="mb-4">Valores mensais por cargo, conforme a convenção coletiva em negociação.</p>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover align-middle mb-0">
+            <caption class="pt-3">
+              Valores fictícios, criados apenas para esta atividade acadêmica. Não representam a convenção coletiva real.
+            </caption>
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Cargo</th>
+                <th scope="col">Jornada</th>
+                <th scope="col" class="text-end">Piso 2025</th>
+                <th scope="col" class="text-end">Reajuste</th>
+                <th scope="col" class="text-end">Piso 2026</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Operador de computador</th>
+                <td>36 h semanais</td>
+                <td class="text-end">R$ 2.100,00</td>
+                <td class="text-end">5,0%</td>
+                <td class="text-end fw-semibold">R$ 2.205,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Técnico de suporte</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 2.450,00</td>
+                <td class="text-end">5,0%</td>
+                <td class="text-end fw-semibold">R$ 2.572,50</td>
+              </tr>
+              <tr>
+                <th scope="row">Analista de suporte</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 3.100,00</td>
+                <td class="text-end">5,0%</td>
+                <td class="text-end fw-semibold">R$ 3.255,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Analista de infraestrutura</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 4.800,00</td>
+                <td class="text-end">5,2%</td>
+                <td class="text-end fw-semibold">R$ 5.049,60</td>
+              </tr>
+              <tr>
+                <th scope="row">Analista de sistemas</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 5.200,00</td>
+                <td class="text-end">5,2%</td>
+                <td class="text-end fw-semibold">R$ 5.470,40</td>
+              </tr>
+              <tr>
+                <th scope="row">Desenvolvedor</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 5.800,00</td>
+                <td class="text-end">5,5%</td>
+                <td class="text-end fw-semibold">R$ 6.119,00</td>
+              </tr>
+              <tr>
+                <th scope="row">Analista de segurança da informação</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 6.500,00</td>
+                <td class="text-end">5,5%</td>
+                <td class="text-end fw-semibold">R$ 6.857,50</td>
+              </tr>
+              <tr>
+                <th scope="row">DBA</th>
+                <td>40 h semanais</td>
+                <td class="text-end">R$ 7.200,00</td>
+                <td class="text-end">5,5%</td>
+                <td class="text-end fw-semibold">R$ 7.596,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="fique-socio" class="py-5 bg-primary text-white" aria-labelledby="titulo-socio">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <h2 id="titulo-socio" class="h1 fw-bold">Fique sócio</h2>
+            <p class="lead">Quanto mais profissionais associados, mais força a categoria tem na hora de negociar.</p>
+            <a href="https://www.sindadosba.org.br" class="btn btn-warning btn-lg fw-semibold" target="_blank"
+              rel="noopener">Quero me associar</a>
+          </div>
+          <div class="col-lg-7">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <h3 class="h5 text-warning">Assessoria jurídica</h3>
+                <p class="mb-0">Atendimento em questões trabalhistas, como jornada, banco de horas e rescisão.</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="h5 text-warning">Convênios de TI</h3>
+                <p class="mb-0">Desconto em cursos, certificações e eventos de tecnologia.</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="h5 text-warning">Clube de benefícios</h3>
+                <p class="mb-0">Condições especiais em saúde, educação, lazer e serviços.</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="h5 text-warning">Voz na negociação</h3>
+                <p class="mb-0">Voto nas assembleias que definem a pauta da campanha salarial.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white-50 py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2 small">
+      <span>SINDADOS-BA – Sindicato dos Profissionais de Processamento de Dados e TI da Bahia</span>
+      <span>Redesenho acadêmico – UCSal, Engenharia de Software</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

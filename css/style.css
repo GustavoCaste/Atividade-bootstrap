@@ -1,0 +1,50 @@
+:root {
+  --bs-primary: #0a2a5e;
+  --bs-primary-rgb: 10, 42, 94;
+  --bs-warning: #ffb703;
+  --bs-warning-rgb: 255, 183, 3;
+  --bs-body-font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6, 22, 52, 0.92) 5%, rgba(6, 22, 52, 0.35) 65%);
+}
+
+.carousel-img {
+  height: 28rem;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  z-index: 1;
+  bottom: 2.5rem;
+  max-width: 40rem;
+}
+
+.carousel-indicators {
+  z-index: 2;
+}
+
+.news-item {
+  border-left: 4px solid var(--bs-warning);
+}
+
+@media (min-width: 768px) {
+  .carousel-img {
+    height: 34rem;
+  }
+
+  .carousel-caption {
+    left: 8%;
+    right: auto;
+    bottom: 3.5rem;
+  }
+}
